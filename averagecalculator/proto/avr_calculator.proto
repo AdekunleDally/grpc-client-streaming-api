@@ -1,0 +1,17 @@
+syntax= "proto3";
+
+package averagecalculator ;
+
+option go_package ="github.com/AdekunleDally/grpc-client-streaming-api/averagecalculator/proto" ;
+
+message  NumberRequest{
+    int64 input_number = 1  ;
+}
+
+message AverageResponse {
+    int64 avr_result = 1;
+}
+
+service AverageService{
+    rpc AverageCalc(stream NumberRequest) returns (AverageResponse); 
+}
