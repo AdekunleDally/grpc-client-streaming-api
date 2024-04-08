@@ -1,6 +1,6 @@
 # An 'Average Calculator' Service
 
-This application provides a calculator service by using a gRPC client streaming API which takes inputs from a user, sends the inputs as message requests(in form of a data stream) to the server  and returns the average of the inputs to the user(client).Through the use of gRPC protocolbuffer, it defines and sends several message request as a stream and returns a respons ethat represent the average of the numbers collected from the commandline.
+This application provides a calculator service by using a gRPC client streaming API which takes inputs from a user, sends the inputs as message requests(in form of a data stream) to the server  and returns the average of the inputs to the user(client).Through the use of gRPC protocolbuffer, it defines and sends several message request as a stream and returns a response that represent the average of the numbers collected from the commandline.
 ## Setup
 
 This project requires a `gcc` compiler installed and the `protobuf` code generation tools.
