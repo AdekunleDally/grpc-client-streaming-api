@@ -16,4 +16,6 @@ func main() {
 		log.Fatalf("Failed to connect : %v\n", err)
 	}
 	c := pb.NewAverageServiceClient(conn)
+
+	calculateAverage(c)
 }

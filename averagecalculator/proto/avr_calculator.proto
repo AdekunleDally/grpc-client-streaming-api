@@ -5,11 +5,11 @@ package averagecalculator ;
 option go_package ="github.com/AdekunleDally/grpc-client-streaming-api/averagecalculator/proto" ;
 
 message  NumberRequest{
-    int64 input_number = 1  ;
+    double input_number = 1  ;
 }
 
 message AverageResponse {
-    int64 avr_result = 1;
+    double avr_result = 1;
 }
 
 service AverageService{
